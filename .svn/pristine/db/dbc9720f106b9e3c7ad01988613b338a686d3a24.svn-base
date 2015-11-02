@@ -1,0 +1,39 @@
+#Container
+{
+    border: 1px solid #F87217;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Image img 
+{
+   width: 95%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+h3
+{
+	color: #F87217;
+}
+h1
+{
+	color: #000000;
+}
+a 
+{
+	text-decoration: none; /* Remove the underline from links */
+	color: #000000; /* change the colour, note US spelling and HEX notation */
+	font-weight: bold; /* make the text bold */
+}
+a:hover {
+	color: #000000; /* change colour when pointer moves over hyperlink */
+}
+
+
+
+
+

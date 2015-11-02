@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Manual</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center>TitalFall Tower Hotel User Manual</center></strong></h1>
+			<h3><em>User Manage Booking Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/user_managebooking.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Press the sign out label and it will sign you out of the system</ul>
+			<ul> 2. Edit Booking: Press the edit booking button to edit your booking</ul>
+			<ul> 3. Save Changes: Press the save changes button to save changes to your booking</ul>
+			<ul> 4. Save Receipt: Press the save receipt button to save your receipt for the booking</ul>
+			<ul> 5. Add Specials: Press the edit booking button to edit your booking</ul>
+			<ul> 6. Choose current booking from the table</ul>
+		</div>
+		<div id="Footer">
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

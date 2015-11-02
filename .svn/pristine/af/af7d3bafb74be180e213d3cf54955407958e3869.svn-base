@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Manual</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center>TitalFall Tower Hotel User Manual</center></strong></h1>
+			<h3><em>Availability Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/Availability_Screen.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Number of nights: Choose the number of nights you wish to stay here</ul>
+			<ul> 2. Year: Choose the year in which you want to stay in the hotel here</ul>
+			<ul> 3. Calender: When you press this calender icon it will give you the option of choosing a particular day, month and year</ul>
+			<ul> 4. Login Button: Once your username and password are entered, press the login button to enter the system</ul>
+			<ul> 5. Search button: Press the search button to bring up available rooms in relation to the dates picked</ul>
+			<ul> 6. Number of people: Choose the number of people that are staying here</ul>
+			<ul> 7. Month: Choose the month in which you want to stay in the hotel here</ul>
+			<ul> 8. Arrival Date: Choose the date in which you want to stay in the hotel here</ul>
+		</div>
+		<div id="Footer">
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

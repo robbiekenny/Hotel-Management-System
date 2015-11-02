@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Home Screen - Manage Account Tab</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>User Home Screen - Manage Account Tab</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/21.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. First name textfield - Please Enter</ul>
+			<ul> 2. Surname textfield - Please Enter</ul>
+			<ul> 3. Home address textfield - Please Enter</ul>
+			<ul> 4. Email address textfield- Please Enter</ul>
+			<ul> 5. Telephone textfield - Please Enter</ul>
+			<ul> 6. Update Details Button: Press the update details button when you filled out all personal details</ul>
+			<ul> 7. Old Password textfield - Please Enter</ul>
+			<ul> 8. New Password textfield - Please Enter</ul>
+			<ul> 9. Confirm New Password textfield - Please Enter</ul>
+			<ul> 10.Update Password Button: Press the update password button when all fields are complete</ul>
+		</div>
+		<div id="Footer">
+			<center>
+			<a  href="12_UserManageBooking_Help.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="14_AdminHomeScreen_ManageBookings.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

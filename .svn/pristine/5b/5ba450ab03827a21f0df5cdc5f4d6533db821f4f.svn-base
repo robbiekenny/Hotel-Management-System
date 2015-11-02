@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<title>User Manual</title>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<img alt="TitanFall Logo" src="assets/images/TitanFallLogo.png"/> 
+			<h1><strong><center><em>User Manual</em></center></strong></h1>
+			<form class="contact-form" action="#" method="post">
+			<fieldset>
+                <legend>User Manual - Table of Contents</legend>
+		<div id="Content">
+			<ul><a href="00_Index.html" class="index_screen">Home</a></ul>
+			<ul><a href="03_Availability_Screen.html" class="availability_screen">Availability Screen</a></ul>
+			<ul><a href="01_LogInScreen.html" class="home">Login Screen</a></ul>
+			<ul><a href="02_CreateAccount.html" class="create_account">User Create Account Screen</a></ul>
+			<ul><a href="04_SearchScreen.html" class="search_screen">Search Screen</a></ul>
+			<ul><a href="05_CreditCardScreen.html" class="search_screen">Credit Card Screen</a></ul>
+			<ul><a href="06_UserHomeScreen.html" class="user_homescreen">User Home Screen - Create Booking Tab</a></ul>
+			<ul><a href="07_UserManageBooking.html" class="user_managebooking">User Home Screen - Manage Booking Tab 1.0</a></ul>
+			<ul><a href="08_UserManageBooking.1.html" class="user_managebooking">User Home Screen - Manage Booking Tab 1.1</a></ul>
+			<ul><a href="09_UserManageBooking.2.html" class="user_managebooking">User Home Screen - Manage Booking Tab 1.2</a></ul>
+			<ul><a href="10_UserManageBooking_Specials.html" class="user_managebooking">User Home Screen - Manage Booking Tab_Add Specials</a></ul>
+			<ul><a href="11_UserManageBooking_Calender.html" class="user_managebooking">User Home Screen - Calender Tab</a></ul>
+			<ul><a href="12_UserManageBooking_Help.html" class="user_managebooking">User Home Screen - Help Tab</a></ul>
+			<ul><a href="13_UserManageAccount.html" class="user_managebooking">User Home Screen - Manage Account Tab</a></ul>
+			<ul><a href="14_AdminHomeScreen_ManageBookings.html" class="admin_managebooking">Administrator Home Screen - Manage Bookings Tab</a></ul>
+			<ul><a href="15_AdminHomeScreen_ManageRooms.html" class="admin_managebooking">Administrator Home Screen - Manage Rooms Tab</a></ul>
+			<ul><a href="16_AdminHomeScreen_ManageSpecials.html" class="admin_managebooking">Administrator Home Screen - Manage Specials Tab</a></ul>
+			<ul><a href="17_AdminHomeScreen_PrintReports.html" class="admin_managebooking">Administrator Home Screen - Manage Print Reports Tab</a></ul>
+			<ul><a href="18_AdminHomeScreen_Help.html" class="admin_managebooking">Administrator Home Screen - Help Tab</a></ul>
+			<ul><a href="19_AdminHomeScreen_AddAdmin.html" class="admin_managebooking">Administrator Home Screen - Add New Administrator Tab</a></ul>
+			<ul><a href="20_AdminHomeScreen_ManageAccount.html" class="admin_managebooking">Administrator Home Screen - Manage Account Tab</a></ul>
+		</div>
+		<div id="Footer">
+            <center>
+			<a  href="03_Availability_Screen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+		</fieldset>
+		</form>
+
+	</div>
+</body>
+</html>

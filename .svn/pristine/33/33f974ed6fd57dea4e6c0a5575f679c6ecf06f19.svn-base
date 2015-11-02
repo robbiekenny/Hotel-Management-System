@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>Availability Screen</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>Availability Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/01.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Number of nights: Choose the number of nights you wish to stay here</ul>
+			<ul> 2. Month: Choose the month in which you want to stay in the hotel here</ul>
+			<ul> 3. Year: Choose the year in which you want to stay in the hotel here</ul>
+			<ul> 4. Login Button: Once your username and password are entered, press the login button to enter the system</ul>
+			<ul> 5. Search button: Press the search button to bring up available rooms in relation to the dates picked</ul>
+			<ul> 6. Calender: When you press this calender icon it will give you the option of choosing a particular day, month and year</ul>
+			<ul> 7. Arrival Date: Choose the date in which you want to stay in the hotel here</ul>
+		</div>
+		<div id="Footer">
+            <center>
+			<a  href="00_Index.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="01_LogInScreen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

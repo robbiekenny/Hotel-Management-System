@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<title>User Manual</title>
+</head>
+<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center>TitalFall Tower Hotel User Manual</center></strong></h1>
+			<form class="contact-form" action="#" method="post">
+			<fieldset>
+                <legend>Table of Contents</legend>
+			<div id="Image">	
+		</div>
+		<div id="Content">
+			<ul>Introduction</ul>
+			<ul><a href="availability_screen.html" class="availability_screen">Availability Screen</a></ul>
+			<ul><a href="login.html" class="home">Login Screen</a></ul>
+			<ul><a href="search_screen.html" class="search_screen">Search Screen</a></ul>
+			<ul><a href="user_homescreen.html" class="user_homescreen">User Home Screen</a></ul>
+			<ul><a href="user_managebooking.html" class="user_managebooking">User Manage Booking</a></ul>
+			<ul><a href="user_managebooking1.html" class="user_managebooking">User Manage Booking 1.1</a></ul>
+			<ul><a href="user_managebooking2.html" class="user_managebooking">User Manage Booking 1.2</a></ul>
+			<ul>Administrator Tabbed Screen</ul>
+			<ul>Administrator Manage Account Screen</ul>
+			<ul>Administrator Manage Booking Screen</ul>
+			<ul>Administrator Manage Rooms Screen</ul>
+			<ul>Calender Screen</ul>
+			<ul>Create Account Screen</ul>
+			<ul>Help Screen</ul>
+			<ul>Manage Account Screen</ul>
+			<ul>Manage Booking Screen</ul>
+			<ul>Specials Screen</ul>
+		</div>
+		</div>
+		<div id="Footer">
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+		</fieldset>
+		</form>
+
+	</div>
+</body>
+</html>

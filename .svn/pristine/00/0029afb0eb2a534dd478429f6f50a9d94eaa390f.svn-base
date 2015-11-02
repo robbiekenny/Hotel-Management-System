@@ -1,0 +1,256 @@
+package GUI;
+
+import javax.swing.*;
+import javax.swing.border.TitledBorder;
+
+import Model.Room;
+import Model.User;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+public class AvailabilityGUI extends JPanel implements ActionListener {
+
+	private String[] availableDates;
+	private int[] roomNumberList;
+	private double[] priceList;
+	private ArrayList<Integer> roomChoice = new ArrayList<Integer>();
+	private JTextField roomNumber;
+	private JList availableList;
+	private JLabel lblArrivalDate, lblNoOfNights, lblnumRoomsLabel;
+	private JButton back, continueb;
+	private int numNights, numberOfRooms, numberOfGuests;
+	private Calendar calDate;
+	private String arrivalDate, departureDate;
+	private JTextField totalCostField;
+	private double total, price;
+	private String user;
+	private ArrayList<User> users;
+	private JPanel container,rooms_available;
+	private JScrollPane scrollPane;
+	private Color color = new Color(227,99,26);
+
+	public AvailabilityGUI(Calendar dc, int numnights) {
+		System.out.println(dc.getTime());
+		calDate = Calendar.getInstance();
+		Date dcDate = dc.getTime();
+		calDate.setTime(dcDate);
+		System.out.println(calDate.getTime());
+		numNights = numnights;
+		buildAvailabiltyScreen();
+	}
+	public AvailabilityGUI(String userID, ArrayList<User> users, Calendar dc,
+			int numnights) {
+		calDate = dc;
+		numNights = numnights;
+		user = userID;
+		System.out.println("WHAT DA FACK");
+		System.out.println(user + " USERNAME ");
+		System.out.println(userID + " " + users.get(0));
+		this.users = users;
+		buildAvailabiltyScreen();
+		
+
+	}
+	public void buildAvailabiltyScreen(){
+		setSize(1000, 500);
+
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		arrivalDate = dateFormat.format(calDate.getTime());
+
+		 Calendar tempcalDate = Calendar.getInstance();
+		 tempcalDate.setTime(calDate.getTime());
+		 tempcalDate.add(Calendar.DATE, numNights);
+		departureDate = (String) (dateFormat.format(tempcalDate.getTime()));
+
+		container = new JPanel();
+		container.setLocation(0, 0);
+		container.setSize(600, 300);
+		add(container);
+		
+		setLayout(null);
+		JPanel buttons = new JPanel();
+		buttons.setBounds(10, 193, 548, 32);
+
+		buttons.setLayout(new FlowLayout(FlowLayout.CENTER, 200, 5));
+
+		back = new JButton("Back");
+		back.setBackground(color);
+		back.addActionListener(this);
+		buttons.add(back);
+
+		continueb = new JButton("Continue");
+		continueb.setBackground(color);
+		continueb.addActionListener(this);
+		buttons.add(continueb);
+
+		
+		
+		container.setLayout(new BorderLayout(0, 0));
+		JPanel dates_selected = new JPanel();
+		container.add(dates_selected, BorderLayout.NORTH);
+		dates_selected.setBorder(new TitledBorder("Dates Selected"));
+
+		lblArrivalDate = new JLabel("Arrival Date: " + arrivalDate + " - "
+				+ departureDate);
+		lblArrivalDate.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		dates_selected.add(lblArrivalDate);
+
+		JLabel filler = new JLabel("              ");
+		dates_selected.add(filler);
+
+		lblNoOfNights = new JLabel("No. of Nights: " + numNights);
+		lblNoOfNights.setFont(new Font("SansSerif", Font.PLAIN, 15));
+		dates_selected.add(lblNoOfNights);
+
+		rooms_available = new JPanel();
+		container.add(rooms_available, BorderLayout.CENTER);
+		rooms_available.setBorder(new TitledBorder("Available Rooms"));
+		rooms_available.setLayout(null);
+
+		lblnumRoomsLabel = new JLabel("Number of rooms:");
+		lblnumRoomsLabel.setBounds(350, 137, 108, 14);
+		rooms_available.add(lblnumRoomsLabel);
+		roomNumber = new JTextField();
+		roomNumber.setBounds(485, 134, 86, 20);
+		roomNumber.setText("0");
+		roomNumber.setEditable(false);
+		rooms_available.add(roomNumber);
+		roomNumber.setColumns(10);
+
+		JLabel lblTotalCost = new JLabel("Total Cost : ");
+		lblTotalCost.setBounds(377, 168, 81, 14);
+		rooms_available.add(lblTotalCost);
+
+		totalCostField = new JTextField(10);
+		totalCostField.setBounds(485, 162, 86, 20);
+		totalCostField.setEditable(false);
+		rooms_available.add(totalCostField);
+		totalCostField.setText("0.0");
+		rooms_available.add(buttons);
+	}
+	public Calendar getCalDate() {
+		return calDate;
+	}
+
+	public void listContent(ArrayList<Room> al) { // prepares an array of strings for the JList
+		availableDates = new String[al.size()];
+		roomNumberList = new int[al.size()];
+		priceList = new double[al.size()];
+		MouseListener mouseListener = new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() == 1) {
+					price = 0.0;
+					int[] listofRooms = availableList.getSelectedIndices();
+					if (listofRooms.length > 0) {
+						roomNumber.setText("" + listofRooms.length);
+						numberOfRooms = Integer.valueOf(roomNumber.getText());
+					} else {
+						roomNumber.setText("0");
+						totalCostField.setText("0.0");
+					}
+					if (roomChoice.size() > 0) {
+						for (int j = roomChoice.size() - 1; j >= 0; j--) {
+							roomChoice.remove(j);
+						}
+					}
+					for (int i = 0; i < listofRooms.length; i++) {
+						System.out.println(listofRooms[i]);
+						price = price + (priceList[listofRooms[i]] * numNights);
+						totalCostField.setText(String.valueOf(price));
+						if (roomChoice.contains(roomNumberList[listofRooms[i]])) {
+							roomChoice.remove(i);
+						} else {
+							roomChoice.add(roomNumberList[listofRooms[i]]);
+						}
+					}
+
+				}
+			}
+		};
+		for (int i = 0; i < al.size(); i++) {
+			roomNumberList[i] = al.get(i).getRoomNumber();
+			priceList[i] = al.get(i).getPrice();
+			availableDates[i] = al.get(i).getRoomType() + "    "
+					+ al.get(i).getPrice();
+
+		}
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(92, 22, 233, 160);
+		rooms_available.add(scrollPane);
+
+		availableList = new JList(availableDates);
+		scrollPane.setViewportView(availableList);
+		availableList.addMouseListener(mouseListener);
+		availableList.setVisibleRowCount(5); // number of rows
+		availableList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION); // allows
+
+		JPanel panel_1 = new JPanel();
+		scrollPane.setColumnHeaderView(panel_1);
+		panel_1.setLayout(new BorderLayout(0, 0));
+
+		JLabel lblType = new JLabel("Type     ");
+		panel_1.add(lblType, BorderLayout.WEST);
+
+		JLabel lblPrice = new JLabel("Price");
+		panel_1.add(lblPrice, BorderLayout.CENTER);
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == back) {
+
+			if (StartScreenGUI.isLoggedIn() == true) {
+				System.out.println(user);
+				UserTabbedScreenGUI u = new UserTabbedScreenGUI(user, users);
+				getTopLevelAncestor().setVisible(false);
+				u.setVisible(true);
+			}
+
+			else {
+				StartPanelGUI s = new StartPanelGUI();
+				s.setVisible(true);
+				s.setSize(1000, 600);
+				container.setVisible(false);
+				add(s);
+				
+				
+			}
+
+		} else {
+			try {
+				total = Double.parseDouble(totalCostField.getText());
+				if(numberOfRooms > 0){
+				if (StartScreenGUI.isLoggedIn() == true) {
+					CreditCardGUI c = new CreditCardGUI(calDate, user, users, total,
+							numberOfRooms, numNights,
+							arrivalDate, departureDate, roomChoice);
+					container.setVisible(false);
+					c.setVisible(true);
+					add(c);
+				} else {
+					System.out.println(calDate.getTime());
+					LoginGUI l = new LoginGUI(calDate, total, numberOfRooms,
+							numNights, arrivalDate,
+							departureDate, roomChoice);
+					container.setVisible(false);
+					l.setVisible(true);
+					add(l);
+				}
+				}
+				else{
+					JOptionPane.showMessageDialog(null, "You must select at least 1 room to continue", "Booking error", JOptionPane.ERROR_MESSAGE);
+				}
+			} catch (NumberFormatException nfe) {
+				JOptionPane.showMessageDialog(null,
+						"You must select a room to proceed", "Booking Error",
+						JOptionPane.WARNING_MESSAGE);
+			}
+
+		}
+
+	}
+}

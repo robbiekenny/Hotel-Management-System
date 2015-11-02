@@ -1,0 +1,74 @@
+/**
+ * Reference: JFreeChart.org API
+ * XYChart  
+ * 
+ * 
+ */
+
+package GUI;
+/**
+ * Thomas Murphy
+ */
+import java.awt.BorderLayout;
+import java.io.File;
+import java.io.IOException;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+public class XyChart{
+	//Constructor for the Xy chart takes an array passed from the gui ,and the files save Location
+	public XyChart(int[] counts,String fileLocation){
+		JFreeChart xyChart = createXyChart(counts);
+		try{
+			///Method for saving from the JFreeChart Api
+        	ChartUtilities.saveChartAsPNG(new File(fileLocation),xyChart, 500, 500);
+        
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+	}
+	
+	public JFreeChart createXyChart(int[] counts){
+		//Takes in the array of values each position in the index represents a particular month ie counts[0] = januarys booking count total
+		XYSeries series = new XYSeries("XYGraph");
+		 series.add(1, counts[0]);
+		 series.add(2, counts[1]);
+		 series.add(3, counts[2]);
+		 series.add(4, counts[3]);
+		 series.add(5, counts[4]);
+		 series.add(6, counts[5]);
+		 series.add(7, counts[6]);
+		 series.add(8, counts[7]);
+		 series.add(9, counts[8]);
+		 series.add(10, counts[9]);
+		 series.add(11, counts[10]);
+		 series.add(12, counts[11]);
+		 // Add the series to the data set
+		 XYSeriesCollection dataset = new XYSeriesCollection();
+		 dataset.addSeries(series);
+		 // Generate the graph
+		 JFreeChart chart = ChartFactory.createXYLineChart(
+		 "XY Chart", // Title
+		 "Months of the Year", // x-axis Label
+		 "No of bookings in the the particular month", // y-axis Label
+		 dataset, // Dataset
+		 PlotOrientation.VERTICAL, // Plot Orientation
+		 true, // Show Legend
+		 true, // USe this to decide Whether to show tooltips or not
+		 false // Configure chart to generate URLs?
+		
+		 );
+		 //Return the chart
+		return chart;
+		
+		}	
+	}

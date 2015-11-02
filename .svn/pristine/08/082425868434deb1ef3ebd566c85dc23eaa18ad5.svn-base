@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Manual</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center>TitalFall Tower Hotel User Manual</center></strong></h1>
+			<h3><em>Search Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/Search_Screen.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Shows the user their arrival date complete with number of nights of stay</ul>
+			<ul> 2. Is a list of rooms available</ul>
+			<ul> 3. Back Button: Press the back button and it brings you back to the search screen</ul>
+			<ul> 4. Continue Button: Press the continue button to carry on to the payment screen</ul>
+			<ul> 5. Shows the total cost of the rooms picked</ul>
+			<ul> 6. Shows the number of rooms picked</ul>
+		</div>
+		<div id="Footer">
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

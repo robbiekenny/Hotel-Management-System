@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>Administrator Home Screen - Manage Bookings Tab</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>Administrator Home Screen - Manage Bookings Tab</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/Admin01.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Administrator Manage Bookings Tab </ul>
+			<ul> 2. Administrator Manage Rooms Tab </ul>
+			<ul> 3. Administrator Manage Specials Tab</ul>
+			<ul> 4. Administrator Print Reports Tab </ul>
+			<ul> 5. Administrator Help Tab </ul>
+			<ul> 6. Add a new administrator </ul>
+			<ul> 7. Administrator Manage Account</ul>
+			<ul> 8. A list of all the bookings on file for the hotel</ul>
+			<ul> 9. Delete Button: Press this button after picking a certain booking that needs to be deleted</ul>
+		</div>
+		<div id="Footer">
+			<center>
+			<a  href="13_UserManageAccount.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="15_AdminHomeScreen_ManageRooms.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

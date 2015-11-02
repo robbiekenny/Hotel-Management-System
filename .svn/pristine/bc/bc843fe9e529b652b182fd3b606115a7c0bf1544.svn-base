@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Manual</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em>User Manual</em></center></strong></h1>
+			<h3><em>Credit Card Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/04.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Choose a credit card type</ul>
+			<ul> 2. Insert a valid credit card number</ul>
+			<ul> 3. Insert the 3 digit secuirty code at the back of the credit card</ul>
+			<ul> 4. Insert the expiry date from the credit card</ul>
+			<ul> 5. Insert your name from the credit card</ul>
+			<ul> 6. Cancel Button: Press the cancel button to bring you back to the user home screen</ul>
+			<ul> 7. Pay Now Button: Press the pay now button to confirm the booking</ul>
+		</div>
+		<div id="Footer">
+			<center>
+			<a  href="04_SearchScreen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="06_UserHomeScreen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+		</div>
+	</div>
+</body>
+</html>

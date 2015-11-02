@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Home Screen - Manage Booking Tab 1.0</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>User Home Screen - Manage Booking Tab 1.0</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/11.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Press the sign out label and it will sign you out of the system</ul>
+			<ul> 2. Edit Booking: Press the edit booking button to edit your booking</ul>
+			<ul> 3. Save Receipt: Press the save receipt button to save your receipt for the booking</ul>
+			<ul> 4. Add Specials: Press the edit booking button to edit your booking</ul>
+			<ul> 5. Choose current booking from the table</ul>
+		</div>
+		<div id="Footer">
+			<center>
+			<a  href="06_UserHomeScreen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="08_UserManageBooking.1.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

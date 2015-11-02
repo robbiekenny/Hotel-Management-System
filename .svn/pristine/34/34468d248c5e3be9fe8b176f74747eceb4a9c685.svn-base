@@ -1,0 +1,82 @@
+/**Referencing JfreeChart.org 
+ * INSERT HARVARD TUTORIAL HERE
+ * 
+ * 
+ */
+
+package GUI;
+
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.DecimalFormat;
+
+import javax.swing.*;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+import org.jfree.data.general.PieDataset;
+
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGEncodeParam;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
+ 
+
+public class PieChart{
+	  // CREATE THE PIE CHART
+	static String title = "";
+	public PieChart(int single, int doubleRoom, int twin, String title,String fileLocation) {      
+		JFreeChart pieChart = createPieChart(createPieDataset(single, doubleRoom, twin), title); 
+        try{
+        	ChartUtilities.saveChartAsPNG(new File(fileLocation), pieChart, 500, 500);
+            //ChartUtilities.writeChartAsJPEG(fileLocation+".JPEG", pieChart, 500, 500);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+	  
+		// BUILD THE PIE CHART
+	    private static JFreeChart createPieChart(PieDataset dataset, String title) {
+	 
+	        JFreeChart chart = ChartFactory.createPieChart(
+	            title,  // chart title
+	            dataset,             // data
+	            true,               // include legend
+	            true,
+	            false
+	        );
+	 
+	        PiePlot plot = (PiePlot) chart.getPlot();
+	        plot.setSectionOutlinesVisible(false);
+	        plot.setNoDataMessage("Invalid Data Passed From DB");
+	 
+	        return chart;
+	 
+	    }
+	    
+		// CREATE THE PIE CHART DATA
+	    private static PieDataset createPieDataset(int single, int doubleRoom, int twin) {
+	    	
+	    	double pie = single + doubleRoom + twin;
+	    	double wedgeOne = single/pie*100;
+	    	double wedgeTwo = doubleRoom/pie *100;
+	    	double wedgeThree = twin/pie*100;
+	    	DecimalFormat df = new DecimalFormat("###.##");
+	        DefaultPieDataset dataset = new DefaultPieDataset();
+	       
+	        dataset.setValue("Single "+ df.format(wedgeOne)+"%", new Double(wedgeOne));
+	        dataset.setValue("Double " + df.format(wedgeTwo)+"%", new Double(wedgeTwo));
+	        dataset.setValue("Twin "+df.format(wedgeThree)+"%", new Double(wedgeThree));
+	        
+	    
+	         return dataset;
+	    }
+}

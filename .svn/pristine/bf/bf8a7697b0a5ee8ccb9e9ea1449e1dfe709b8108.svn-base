@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User Manual</title>
+</head>
+
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center>TitalFall Tower Hotel User Manual</center></strong></h1>
+			<h3><em>Login Screen</em></h3>
+		</div>
+		
+		<div id="Image">
+			<img src="assets/images/Login_Screen.png"/>
+		</div>
+		
+		<div id="Content">
+			<ul> 1. Username textfield: Enter your username here</ul>
+			<ul> 2. Password textfield: Enter your password here</ul>
+			<ul> 3. Login Button: Once your username and password are entered, press the login button to enter the system</ul>
+			<ul> 4. Create Account: A link that will bring you to the create account screen</ul>
+			<ul> 5. Back button: Press the back button to go back to the Availability screen</ul>
+		</div>
+		
+		<div id="Footer">
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+
+	</div>
+</body>
+</html>

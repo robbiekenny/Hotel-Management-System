@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>Login Screen</title>
+</head>
+
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>Login Screen</em></h3>
+		</div>
+		
+		<div id="Image">
+			<img src="assets/images/03.png"/>
+		</div>
+		
+		<div id="Content">
+			<ul> 1. Username textfield: Enter your username here</ul>
+			<ul> 2. Password textfield: Enter your password here</ul>
+			<ul> 3. Login Button: Once your username and password are entered, press the login button to enter the system</ul>
+			<ul> 4. Create Account: A link that will bring you to the create account screen</ul>
+			<ul> 5. Back button: Press the back button to go back to the Availability screen</ul>
+		</div>
+		
+		<div id="Footer">
+            <center>
+			<a  href="03_Availability_Screen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="02_CreateAccount.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

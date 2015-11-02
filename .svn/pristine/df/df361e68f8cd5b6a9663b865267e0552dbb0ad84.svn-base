@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>Administrator Home Screen - Print Reports Tab</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>Administrator Home Screen - Print Reports Tab</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/Admin11.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Select a report you</ul>
+			<ul> 2. Open Report Button: Press the open report button to open the report you have just saved</ul>
+			<ul> 3. Save Report Button: Press the save report button to save the report you have chosen in a location on your machine</ul>
+		</div>
+		<div id="Footer">
+			<center>
+			<a  href="16_AdminHomeScreen_ManageSpecials.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="18_AdminHomeScreen_Help.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>

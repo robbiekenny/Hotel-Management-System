@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<link id="stylesheet" href="./assets/css/Style.css" rel="stylesheet" type="text/css">
+	<title>User/Browser Search Screen</title>
+</head>
+<body>
+	<div id="Container">
+		<div id ="Logo">
+			<h1><strong><center><em><ul><a href="00_Index.html" class="index_screen">User Manual</a></ul></em></center></strong></h1>
+			<h3><em>User/Browser Search Screen</em></h3>
+		</div>
+		<div id="Image">
+			<img src="assets/images/02.png"/>
+		</div>
+		<div id="Content">
+			<ul> 1. Shows the user their arrival date complete with number of nights of stay</ul>
+			<ul> 2. Is a list of rooms available</ul>
+			<ul> 3. Back Button: Press the back button and it brings you back to the search screen</ul>
+			<ul> 4. Continue Button: Press the continue button to carry on to the payment screen</ul>
+			<ul> 5. Shows the total cost of the rooms picked</ul>
+			<ul> 6. Shows the number of rooms picked</ul>
+		</div>
+		<div id="Footer">
+            <center>
+			<a  href="02_CreateAccount.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-previous-button.png" alt="Previous Page"/></a>
+			<a  href="05_CreditCardScreen.html"><img src="assets/images/hrexaminer-top-25-hr-digital-influencers-2010-next-button.png" alt="Next Page"/></a>
+			</center>
+			<h6><em><center>&copy; TitalFall Tower Hotel 2014</center></em></h6>
+		</div>
+	</div>
+</body>
+</html>
